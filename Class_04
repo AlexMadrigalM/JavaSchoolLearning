@@ -1,0 +1,27 @@
+package org.example;
+
+import javax.swing.*;
+
+public class Practica9 {
+    public static void main(String[] args) {
+        String nombre_producto = JOptionPane.showInputDialog("Ingrese el nombre del producto");
+        String precio = JOptionPane.showInputDialog("Ingrese el precio del producto");
+        float precioc = Float.parseFloat(precio);
+        String cantidad = JOptionPane.showInputDialog("Ingrese el cantidad del producto");
+        float cantidadc = Float.parseFloat(cantidad);
+
+        if(cantidadc>=1 && cantidadc<=3){
+            JOptionPane.showMessageDialog(null, "El producto: " + nombre_producto + " Tiene un precio de: " + ((cantidadc * precioc)+(cantidadc * precioc*0.16)-(cantidadc * precioc*0.05)));
+        }
+        if(cantidadc>=4 && cantidadc<=10){
+            JOptionPane.showMessageDialog(null, "El producto: " + nombre_producto + " Tiene un precio de: " + ((cantidadc * precioc)+(cantidadc * precioc*0.16)-(cantidadc * precioc*0.1)));
+        }
+        if(cantidadc>=11){
+            JOptionPane.showMessageDialog(null, "El producto: " + nombre_producto + " Tiene un precio de: " + ((cantidadc * precioc)+(cantidadc * precioc*0.16)-(cantidadc * precioc*0.2)));
+        }
+
+
+
+
+    }
+}
