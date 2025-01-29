@@ -1,0 +1,27 @@
+package org.example;
+
+import javax.swing.*;
+
+public class practica11 { public static void main(String[] args) {
+    int contador = 1;
+    int cma = 0;
+    int cme = 0;
+    int acumulador = 0;
+    while (contador <=11){
+        int edad = Integer.parseInt(JOptionPane.showInputDialog("Ingresa tu edad"));
+        if (edad>=18) {
+            JOptionPane.showMessageDialog(null, "Eres mayor de de edad");
+            cma = cma + 1;
+        }else {
+                JOptionPane.showMessageDialog(null, "Eres menor de edad");
+                cme = cme + 1;
+            }
+
+            contador = contador + 1;
+            acumulador = acumulador + edad;
+        }
+
+    int promEdad = acumulador /(contador -1);
+    JOptionPane.showMessageDialog(null, "Los mayores de edad fueron :" +cma);
+    JOptionPane.showMessageDialog( null,"Los menores de edad fueron : " +cme);
+    JOptionPane.showMessageDialog(null,"La edad promedio es :" + promEdad);
