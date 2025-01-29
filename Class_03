@@ -1,0 +1,40 @@
+import javax.swing.JOptionPane;
+
+public class Practica7 {
+    public static void main(String[] args) {
+        String numero = JOptionPane.showInputDialog("Ingrese un número para traducir: ");
+
+        float number = Float.parseFloat(numero);
+
+        if(number==1) {
+            JOptionPane.showMessageDialog(null, "One");
+        }
+        if(number==2) {
+            JOptionPane.showMessageDialog(null, "Two");
+        }
+        if(number==3) {
+            JOptionPane.showMessageDialog(null, "Three");
+        }
+        if(number==4) {
+            JOptionPane.showMessageDialog(null, "Four");
+        }
+        if(number==5) {
+            JOptionPane.showMessageDialog(null, "Five");
+        }
+        if(number==6) {
+            JOptionPane.showMessageDialog(null, "Six");
+        }
+        if(number==7) {
+            JOptionPane.showMessageDialog(null, "Seven");
+        }
+        if(number==8) {
+            JOptionPane.showMessageDialog(null, "Eight");
+        }
+        if(number==9) {
+            JOptionPane.showMessageDialog(null, "Nine");
+        }
+        if(number==10) {
+            JOptionPane.showMessageDialog(null, "Ten");
+        }
+        }
+    }
