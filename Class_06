@@ -1,0 +1,63 @@
+//Programa que entreviste a 20 alumnos y preguntar cuál fue su materia favorita
+//(español, matemáticas, ciencias y programación)
+//Preguntar la calificación obtenida
+//Mostrar al final del programa cuántos fueron de español, cuántos fueron de matemáticas,
+//cuántos fueron de ciencias y cuántos de programación
+//Asimismo, mostrar el promedio por cada asignatura y el promedio del grupo
+//Si el promedio de grupo fue entre 0 y 5 el grupo necesita regularización, si el promedio de grupo
+//fue entre 6 y 8 necesita un repaso obligatorio y si fue entre 9 y 10, lo felicitan
+//Si el promedio por asignatura por el grupo fue de 0-5 necesita regularización, si el promedio fue de 6-8
+//necesita un repaso obligatorio y si es de 9-10 lo felicitane
+
+import javax.swing.JOptionPane;
+
+public class Class_06 {
+    public static void main(String[] args) {
+
+int contador = 1;
+int esp = 0;
+int mat = 0;
+int cie = 0;
+int pro = 0;
+
+int acumulador_esp = 0;
+int acumulador_mat = 0;
+int acumulador_cie = 0;
+int acumulador_pro = 0;
+
+while (contador <=5) {
+    String alumnos = JOptionPane.showInputDialog("Materia favorita del alumno: \nEscribe e para Español\nEscribe m para Matemáticas\nEscribe c para Ciencias\nEscribe p para Programación");
+    if(alumnos.equals("e")) {esp++;
+    } else if (alumnos.equals("m")) { mat++;
+    } else if (alumnos.equals("c")) { cie++;
+    } else if (alumnos.equals("p")) {pro++; }
+
+    int promedio_ind = Integer.parseInt(JOptionPane.showInputDialog("¿Cuál fue tu calificación en la materia?: "));
+    if (alumnos.equals("e")) {acumulador_esp = acumulador_esp + promedio_ind;
+    } else if (alumnos.equals("m")) { acumulador_mat = acumulador_mat + promedio_ind;
+    } else if (alumnos.equals("c")) { acumulador_cie = acumulador_cie + promedio_ind;
+    } else if (alumnos.equals("p")) {acumulador_pro = acumulador_pro + promedio_ind;
+    }
+
+    contador++;
+}
+
+int promedio_esp = acumulador_esp / (esp-1);
+int promedio_mat = acumulador_mat / (mat-1);
+int promedio_cie = acumulador_cie / (cie-1);
+int promedio_pro = acumulador_pro / (pro-1);
+
+JOptionPane.showMessageDialog(null, "El promedio de los que estudiaron\nmatemáticas fue de: " + promedio_esp);
+JOptionPane.showMessageDialog(null, "El promedio de los que estudiaron\nmatemáticas fue de: " + promedio_mat);
+JOptionPane.showMessageDialog(null, "El promedio de los que estudiaron\nciencias fue de: " + promedio_cie);
+JOptionPane.showMessageDialog(null, "El promedio de los que estudiaron\nprogramación fue de: " + promedio_pro);
+
+JOptionPane.showMessageDialog(null, "Alumnos que eligieron\nespañol como materia\nfavorita: " + esp);
+JOptionPane.showMessageDialog(null, "Alumnos que eligieron\nmatemáticas como materia\nfavorita: " + mat);
+JOptionPane.showMessageDialog(null, "Alumnos que eligieron\nciencias como materia\nfavorita: " + cie);
+JOptionPane.showMessageDialog(null, "Alumnos que eligieron\nprogramación como materia\nfavorita: " + pro);
+
+
+
+    }
+}
