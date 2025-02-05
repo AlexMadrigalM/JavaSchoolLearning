@@ -1,0 +1,25 @@
+package org.example;
+//Programa que muestra las tablas de multiplicar del 1 al 10
+
+import javax.swing.JOptionPane;
+
+public class practica12 {
+    public static void main(String[] args) {
+        for (int pregunta = Integer.parseInt(JOptionPane.showInputDialog("¿Cuál tabla de multiplicar quieres ver?: ")); pregunta <= 10 && pregunta >= 1;) {
+            JOptionPane.showMessageDialog(null, "Tabla del " + pregunta +
+                    "\n1 x " + pregunta + " = " + pregunta +
+                    "\n2 x " + pregunta + " = " + pregunta*2 +
+                    "\n3 x " + pregunta + " = " + pregunta*3 +
+                    "\n4 x " + pregunta + " = " + pregunta*4 +
+                    "\n5 x " + pregunta + " = " + pregunta*5 +
+                    "\n6 x " + pregunta + " = " + pregunta*6 +
+                    "\n7 x " + pregunta + " = " + pregunta*7 +
+                    "\n8 x " + pregunta + " = " + pregunta*8 +
+                    "\n9 x " + pregunta + " = " + pregunta*9 +
+                    "\n10 x " + pregunta + " = " + pregunta*10);
+            break;
+            //Break se usa para romper el ciclo después de un solo uso
+
+        }
+    }
+}
