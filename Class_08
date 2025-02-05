@@ -1,0 +1,45 @@
+package org.example;
+
+import javax.swing.JOptionPane;
+
+public class practica16 { public static void main(String[] args) {
+    String option ="";
+    int num1,num2,r;
+    do {
+        option = JOptionPane.showInputDialog("Bienvenido a mi calculadora<3"
+                + "\n1.-Sumar"
+                + "\n2.-Restar"
+                + "\n3.-Multiplicar"
+                + "\n4.-Dividir"
+                + "\n5.-Salir");
+        switch (option) {
+            case "1":
+                num1 = Integer.parseInt(JOptionPane.showInputDialog("Ingresa un numero plis <3"));
+                num2 = Integer.parseInt(JOptionPane.showInputDialog("Ingresa otro numero plis <3"));
+                r = num1 + num2;
+                JOptionPane.showMessageDialog(null, r);
+                break;
+            case "2":
+                num1 = Integer.parseInt(JOptionPane.showInputDialog("Ingresa un numero plis <3"));
+                num2 = Integer.parseInt(JOptionPane.showInputDialog("Ingresa otro numero plis <3"));
+                r = num1 - num2;
+                JOptionPane.showMessageDialog(null, r);
+                break;
+            case "3":
+                num1 = Integer.parseInt(JOptionPane.showInputDialog("Ingresa un numero plis <3"));
+                num2 = Integer.parseInt(JOptionPane.showInputDialog("Ingresa un numero plis <3"));
+                r = num1 * num2;
+                JOptionPane.showMessageDialog(null, r);
+                break;
+            case "4":
+                num1 = Integer.parseInt(JOptionPane.showInputDialog("Ingresa un numero plis <3"));
+                num2 = Integer.parseInt(JOptionPane.showInputDialog("Ingresa un numero plis <3"));
+                r = num1 / num2;
+                JOptionPane.showMessageDialog(null, r);
+                break;
+            case "5":
+                JOptionPane.showMessageDialog(null, "Gracias por usar mi calculadora espero pasar esta materia porfa profe que este bien gracias bye");
+        }
+    } while (!option.equals("5"));
+    }
+}
