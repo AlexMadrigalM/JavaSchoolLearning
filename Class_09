@@ -1,0 +1,59 @@
+import javax.swing.JOptionPane;
+
+//Hacer un programa que presente un menú de números del 1 al 10
+//La opción que el usuario elija deberá mostrarse en inglés
+//La opción 11 es salir
+
+public class Class_07 { public static void main(String[] args) {
+    String option ="";
+    int numero;
+    do {
+        option = JOptionPane.showInputDialog("¿Cuál número te gustaría traducir?"
+                + "\n1.- Uno "
+                + "\n2.- Dos "
+                + "\n3.- Tres "
+                + "\n4.- Cuatro "
+                + "\n5.- Cinco "
+                + "\n6.- Seis "
+                + "\n7.- Siete "
+                + "\n8.- Ocho "
+                + "\n9.- Nueve "
+                + "\n10.- Diez "
+                + "\n11.- Salir ");
+        switch (option) {
+            case "1":
+                JOptionPane.showMessageDialog(null, "1 - One");
+                break;
+            case "2":
+                JOptionPane.showMessageDialog(null, "2 - Two");
+                break;
+            case "3":
+                JOptionPane.showMessageDialog(null, "3 - Three");
+                break;
+            case "4":
+                JOptionPane.showMessageDialog(null, "4 - Four");
+                break;
+            case "5":
+                JOptionPane.showMessageDialog(null, "5 - Five");
+                break;
+            case "6":
+                JOptionPane.showMessageDialog(null, "6 - Six");
+                break;
+            case "7":
+                JOptionPane.showMessageDialog(null, "7 - Seven");
+                break;
+            case "8":
+                JOptionPane.showMessageDialog(null, "8 - Eight");
+                break;
+            case "9":
+                JOptionPane.showMessageDialog(null, "9 - Nine");
+                break;
+            case "10":
+                JOptionPane.showMessageDialog(null, "10 - Ten");
+                break;
+            case "11":
+                JOptionPane.showMessageDialog(null, "¡Hasta la próxima!");
+        }
+    } while (!option.equals("11"));
+}
+}
