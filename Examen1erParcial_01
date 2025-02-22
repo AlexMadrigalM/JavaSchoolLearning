@@ -1,0 +1,19 @@
+import javax.swing.JOptionPane;
+
+public class Examen1erParcial_01 { public static void main(String[] args) {
+
+    String numero = JOptionPane.showInputDialog("Ingrese un numero");
+    int num = Integer.parseInt(numero);
+
+    if (num>=1) {
+    JOptionPane.showMessageDialog(null, "Tu número es positivo");
+    }
+    else if (num==0) {
+    JOptionPane.showMessageDialog(null, "Tu número es 0");
+    }
+    else {
+    JOptionPane.showMessageDialog(null,   "Tu número es negativo");
+    }
+
+    }
+}
