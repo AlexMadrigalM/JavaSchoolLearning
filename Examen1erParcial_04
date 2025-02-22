@@ -1,0 +1,14 @@
+//Escribe un programa que imprima los números del 1 al 10 usando un ciclo while.
+
+public class Examen1erParcial_04 { public static void main(String[] args) {
+
+    int contador = 1;
+    int acumulador = 0;
+    while (acumulador <= 9) {
+
+        System.out.println(contador + acumulador);
+        acumulador ++;
+
+        }
+    }
+}
