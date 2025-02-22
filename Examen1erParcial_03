@@ -1,0 +1,18 @@
+//Escribe un programa que solicite al usuario dos números enteros y muestre su suma, resta, 
+//multiplicación y división.
+
+import javax.swing.JOptionPane;
+
+public class Examen1erParcial_03 { public static void main(String[] args) {
+
+    String numero1 = JOptionPane.showInputDialog("Ingrese el primer número: ");
+    int num1 = Integer.parseInt(numero1);
+    String numero2 = JOptionPane.showInputDialog("Ingrese el segundo número: ");
+    int num2 = Integer.parseInt(numero2);
+
+    JOptionPane.showMessageDialog(null, "La suma de tus 2 números es: " + (num1 + num2) + "\n"
+    + "La resta de tus 2 números es: " + (num1 - num2) + "\n" + "La multiplicación de tus 2 números es: " + (num1 * num2) + "\n"
+    + "La division de tus 2 números es: " + (num1 / num2));
+
+    }
+}
